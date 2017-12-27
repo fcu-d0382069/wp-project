@@ -52,7 +52,7 @@ body
 .context
 {
     width:750px;
-    height:300px;
+    height:600px;
     border-style: solid;
     border-radius: 10px;
 }
@@ -62,7 +62,7 @@ body
     position:relative;
     float:right;
     width:230px;
-    height:605px;
+    height:600px;
     border-style: solid;
     border-radius: 10px;
 }
