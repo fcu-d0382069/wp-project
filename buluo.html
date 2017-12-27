@@ -1,0 +1,217 @@
+﻿<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="MenuStyle.css">
+    <title>index</title>
+</head>
+
+<body>
+
+    <div class='main'>
+
+        <div class='top'>
+            <div class='menu'>
+                <ul id="MenuBar1">
+                    <li><a href="buluo.html">部落清單</a> </li>
+                    <li><a href="#">網站介紹</a> </li>
+                    <li><a href="#">聯絡我們</a> </li>
+                </ul>
+            </div>
+            <div class='logo'>
+                <img class="img-responsive img-portfolio img-hover" src="https://stickershop.line-scdn.net/stickershop/v1/product/1044033/LINEStorePC/main@2x.png;compress=true?__=20161019" alt="" height="100" width="100">
+            </div>
+        </div>
+
+        <div class='center'>
+            <div class='list'>
+                <aside>
+                    <section class="popular">
+                        <ul id="MenuBar1">
+                            <h2>原住民:</h2>
+                            <a id="Amis">阿美族</a>
+                            <a id="Atayal">泰雅族</a>
+                            <a id="Paiwan">排灣族</a>
+                            <a id="Bunun">布農族</a>
+                            <a id="a">卑南族</a>
+                            <a id="b">魯凱族</a>
+                            <a id="c">鄒族</a>
+                            <a id="d">賽夏族</a>
+                            <a id="e">雅美族(達悟族)</a>
+                            <a id="f">邵族</a>
+                            <a id="g">噶瑪蘭族</a>
+                            <a id="h">太魯閣族</a>
+                            <a id="i">撒奇萊雅族</a>
+                            <a id="j">賽德克族</a>
+                            <a id="k">拉阿魯哇族</a>
+                            <a id="l">卡那卡那富族</a>
+                    </section>
+                </aside>
+</div>
+            <div class='context'>
+                <figure>
+                    <img id="pic1" src="images/Amis.jpg" alt="Amis" height="100px" width="100px" />
+
+                </figure>
+                <hgroup>
+                    <h2 id="title1">臺灣原住民族</h2>
+                </hgroup>
+                <p id="data1">臺灣原住民族是指原居於臺灣的民族，由17世紀漢人移民進入前分布在臺灣各地的數個語言及生活方式不同之部族構成，屬於南島民族；其中臺灣本島的所有部族為臺灣南島語群，蘭嶼上的達悟族則屬於馬來-玻里尼西亞語族的巴丹語群。目前僅16個部族為官方所承認，根據《原住民族身分法》登記之戶口統計約55萬多人口，佔臺灣人口的2.37%。</p>
+            </div>
+
+            <div class='context'>content</div>
+        </div>
+
+        <div class='bottom'>
+            頁尾
+        </div>
+
+    </div>
+    <script>
+function slideup1()
+{
+$("h2#title1").slideUp();
+	$("p#data1").slideUp();
+	$("img#pic1").slideUp();
+}
+function show1()
+{
+	$("h2#title1").show(500);
+	$("p#data1").show(500);
+	$("img#pic1").show(500);
+}
+var arr1 = ["阿美族","泰雅族","排灣族","布農族","卑南族","魯凱族","鄒族","賽夏族","雅美族(達悟族)","邵族","噶瑪蘭族","太魯閣族","撒奇萊雅族","賽德克族","拉阿魯哇族","卡那卡那富族"];
+
+
+$( "a#Amis" ).click(function() {
+
+	slideup1();
+	$("h2#title1").text(arr1[0]);
+	$("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+	$("img#pic1").attr("src","images/Amis.jpg");
+	show1();
+	});
+$( "a#Atayal" ).click(function() {
+	slideup1();
+	$("h2#title1").text(arr1[1]);
+	$("p#data1").text("分佈在台灣中北部山區，包括埔里至花蓮縣以北地區，目前人口約有88,571人(106年4月數據)。是在台灣的第三大原住民族群，為典型的高山民族，古有出草獵人頭習俗。")
+	$("img#pic1").attr("src","images/Atayal.gif");
+	show1();
+
+});
+$( "a#Paiwan" ).click(function() {
+	slideup1();
+	$("h2#title1").text(arr1[2]);
+	$("p#data1").text("分佈區域於北起大武山、南達恆春、西到枋寮、東到台東太麻里的中央山脈兩側。人數將近99,298人(106年4月數據)。")
+	$("img#pic1").attr("src","images/Paiwan.jpg");
+	show1();
+});
+$( "a#Bunun" ).click(function() {
+	slideup1();
+	$("h2#title1").text(arr1[3]);
+	$("p#data1").text("分佈於中央山脈海拔一千至二千公尺的山區，分佈廣及花蓮縣卓溪鄉、高雄縣那瑪夏鄉、台東縣海端鄉，而以南投縣境為主。人口約有57,630人(106年4月數據)。布農族的氏族又可分為卓社群、卡社群、丹社群、巒社群、郡社群及蘭社群等6個主要氏族，社會組織以父系大家族為主")
+	$("img#pic1").attr("src","images/Bunun.jpg");
+	 show1();
+});
+
+$( "a#a" ).click(function() {
+	slideup1();
+	$("h2#title1").text(arr1[4]);
+	$("p#data1").text("分佈於中央山脈海拔一千至二千公尺的山區，分佈廣及花蓮縣卓溪鄉、高雄縣那瑪夏鄉、台東縣海端鄉，而以南投縣境為主。人口約有57,630人(106年4月數據)。布農族的氏族又可分為卓社群、卡社群、丹社群、巒社群、郡社群及蘭社群等6個主要氏族，社會組織以父系大家族為主")
+	$("img#pic1").attr("src","images/Bunun.jpg");
+	 show1();
+});
+$( "a#b" ).click(function() {
+	slideup1();
+	$("h2#title1").text(arr1[5]);
+	$("p#data1").text("分佈於中央山脈海拔一千至二千公尺的山區，分佈廣及花蓮縣卓溪鄉、高雄縣那瑪夏鄉、台東縣海端鄉，而以南投縣境為主。人口約有57,630人(106年4月數據)。布農族的氏族又可分為卓社群、卡社群、丹社群、巒社群、郡社群及蘭社群等6個主要氏族，社會組織以父系大家族為主")
+	$("img#pic1").attr("src","images/Bunun.jpg");
+	 show1();
+});$( "a#c" ).click(function() {
+	slideup1();
+	$("h2#title1").text(arr1[6]);
+	$("p#data1").text("分佈於中央山脈海拔一千至二千公尺的山區，分佈廣及花蓮縣卓溪鄉、高雄縣那瑪夏鄉、台東縣海端鄉，而以南投縣境為主。人口約有57,630人(106年4月數據)。布農族的氏族又可分為卓社群、卡社群、丹社群、巒社群、郡社群及蘭社群等6個主要氏族，社會組織以父系大家族為主")
+	$("img#pic1").attr("src","images/Bunun.jpg");
+	 show1();
+});
+$( "a#d" ).click(function() {
+	slideup1();
+	$("h2#title1").text(arr1[7]);
+	$("p#data1").text("分佈區域於北起大武山、南達恆春、西到枋寮、東到台東太麻里的中央山脈兩側。人數將近99,298人(106年4月數據)。")
+	$("img#pic1").attr("src","images/Paiwan.jpg");
+	show1();
+});
+
+$( "a#e" ).click(function() {
+	slideup1();
+	$("h2#title1").text(arr1[8]);
+	$("p#data1").text("分佈區域於北起大武山、南達恆春、西到枋寮、東到台東太麻里的中央山脈兩側。人數將近99,298人(106年4月數據)。")
+	$("img#pic1").attr("src","images/Paiwan.jpg");
+	show1();
+});$( "a#f" ).click(function() {
+	slideup1();
+	$("h2#title1").text(arr1[9]);
+	$("p#data1").text("分佈區域於北起大武山、南達恆春、西到枋寮、東到台東太麻里的中央山脈兩側。人數將近99,298人(106年4月數據)。")
+	$("img#pic1").attr("src","images/Paiwan.jpg");
+	show1();
+});
+
+$( "a#g" ).click(function() {
+
+	slideup1();
+	$("h2#title1").text(arr1[10]);
+	$("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+	$("img#pic1").attr("src","images/Amis.jpg");
+	show1();
+	});
+
+$( "a#h" ).click(function() {
+
+	slideup1();
+	$("h2#title1").text(arr1[11]);
+	$("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+	$("img#pic1").attr("src","images/Amis.jpg");
+	show1();
+	});
+
+$( "a#i" ).click(function() {
+
+	slideup1();
+	$("h2#title1").text(arr1[12]);
+	$("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+	$("img#pic1").attr("src","images/Amis.jpg");
+	show1();
+	});
+
+
+$( "a#j" ).click(function() {
+
+	slideup1();
+	$("h2#title1").text(arr1[13]);
+	$("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+	$("img#pic1").attr("src","images/Amis.jpg");
+	show1();
+	});
+
+$( "a#k" ).click(function() {
+
+	slideup1();
+	$("h2#title1").text(arr1[14]);
+	$("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+	$("img#pic1").attr("src","images/Amis.jpg");
+	show1();
+	});
+$( "a#l" ).click(function() {
+
+	slideup1();
+	$("h2#title1").text(arr1[15]);
+	$("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+	$("img#pic1").attr("src","images/Amis.jpg");
+	show1();
+	});
+    </script>
+</body>
+
+</html>
