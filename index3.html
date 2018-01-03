@@ -1,0 +1,266 @@
+﻿<html>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+        .w3-sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 100px;
+            bottom: 0;
+            height: auto;
+        }
+    </style>
+    <body>
+
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme w3-top w3-left-align w3-large" style="height:100px; line-height:100px">
+                <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+                <center style="font-size:30px;">台灣原住民族</center>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar" >
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="index.html"><b>主頁</b></a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="index2.html">網站介紹</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="index3.html">部落介紹</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="#">聯絡我們</a>
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+        <div class="w3-main" style="margin-left:250px;margin-top:100px;">
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">部落介紹</h1>
+                    <aside>
+                    <section class="popular">
+                        <ul id="MenuBar1">
+                            <h2>原住民:</h2>
+                            <a id="Amis" href="#">阿美族</a>
+                            <a id="Atayal" href="#">泰雅族</a>
+                            <a id="Paiwan" href="#">排灣族</a>
+                            <a id="Bunun" href="#">布農族</a>
+                            <a id="a" href="#">卑南族</a>
+                            <a id="b" href="#">魯凱族</a>
+                            <a id="c" href="#">鄒族</a>
+                            <a id="d" href="#">賽夏族</a>
+                            <a id="e" href="#">雅美族</a>
+                            <a id="f" href="#">邵族</a>
+                            <a id="g" href="#">噶瑪蘭族</a>
+                            <a id="h" href="#">太魯閣族</a>
+                            <a id="i" href="#">撒奇萊雅族</a>
+                            <a id="j" href="#">賽德克族</a>
+                            <a id="k" href="#">拉阿魯哇族</a>
+                            <a id="l" href="#">卡那卡那富族</a>
+                    </section>
+                </aside>
+                    
+                </div>
+            </div>
+            <div class="w3-row w3-padding-32">
+    <div class="w3-twothird w3-container">
+            <h2 class="w3-text-teal" id="title1">臺灣原住民族</h2>
+      <p id="data1">臺灣原住民族是指原居於臺灣的民族，由17世紀漢人移民進入前分布在臺灣各地的數個語言及生活方式不同之部族構成，屬於南島民族；其中臺灣本島的所有部族為臺灣南島語群，蘭嶼上的達悟族則屬於馬來-玻里尼西亞語族的巴丹語群。目前僅16個部族為官方所承認，根據《原住民族身分法》登記之戶口統計約55萬多人口，佔臺灣人口的2.37%。</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-center"><img id="pic1" src="images/Amis.jpg" alt="Amis" width=100% /></p>
+          </div>
+  </div>
+
+
+            <footer id="myFooter">
+                <div class="w3-container w3-theme-l2 w3-padding-32">
+                    <h4>Footer</h4>
+                </div>
+            </footer>
+
+            <!-- END MAIN -->
+        </div>
+
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidebar.style.display = 'block';
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+            }
+        </script>
+
+        <script>
+            function slideup1()
+            {
+                $("h2#title1").slideUp();
+                $("p#data1").slideUp();
+                $("img#pic1").slideUp();
+            }
+            function show1()
+            {
+                $("h2#title1").show(500);
+                $("p#data1").show(500);
+                $("img#pic1").show(500);
+            }
+            var arr1 = ["阿美族", "泰雅族", "排灣族", "布農族", "卑南族", "魯凱族", "鄒族", "賽夏族", "雅美族(達悟族)", "邵族", "噶瑪蘭族", "太魯閣族", "撒奇萊雅族", "賽德克族", "拉阿魯哇族", "卡那卡那富族"];
+
+
+            $("a#Amis").click(function () {
+
+                slideup1();
+                $("h2#title1").text(arr1[0]);
+                $("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+                $("img#pic1").attr("src", "images/Amis.jpg");
+                show1();
+            });
+            $("a#Atayal").click(function () {
+                slideup1();
+                $("h2#title1").text(arr1[1]);
+                $("p#data1").text("分佈在台灣中北部山區，包括埔里至花蓮縣以北地區，目前人口約有88,571人(106年4月數據)。是在台灣的第三大原住民族群，為典型的高山民族，古有出草獵人頭習俗。")
+                $("img#pic1").attr("src", "images/Atayal.gif");
+                show1();
+
+            });
+            $("a#Paiwan").click(function () {
+                slideup1();
+                $("h2#title1").text(arr1[2]);
+                $("p#data1").text("分佈區域於北起大武山、南達恆春、西到枋寮、東到台東太麻里的中央山脈兩側。人數將近99,298人(106年4月數據)。")
+                $("img#pic1").attr("src", "images/Paiwan.jpg");
+                show1();
+            });
+            $("a#Bunun").click(function () {
+                slideup1();
+                $("h2#title1").text(arr1[3]);
+                $("p#data1").text("分佈於中央山脈海拔一千至二千公尺的山區，分佈廣及花蓮縣卓溪鄉、高雄縣那瑪夏鄉、台東縣海端鄉，而以南投縣境為主。人口約有57,630人(106年4月數據)。布農族的氏族又可分為卓社群、卡社群、丹社群、巒社群、郡社群及蘭社群等6個主要氏族，社會組織以父系大家族為主")
+                $("img#pic1").attr("src", "images/Bunun.jpg");
+                show1();
+            });
+
+            $("a#a").click(function () {
+                slideup1();
+                $("h2#title1").text(arr1[4]);
+                $("p#data1").text("分佈於中央山脈海拔一千至二千公尺的山區，分佈廣及花蓮縣卓溪鄉、高雄縣那瑪夏鄉、台東縣海端鄉，而以南投縣境為主。人口約有57,630人(106年4月數據)。布農族的氏族又可分為卓社群、卡社群、丹社群、巒社群、郡社群及蘭社群等6個主要氏族，社會組織以父系大家族為主")
+                $("img#pic1").attr("src", "images/Bunun.jpg");
+                show1();
+            });
+            $("a#b").click(function () {
+                slideup1();
+                $("h2#title1").text(arr1[5]);
+                $("p#data1").text("分佈於中央山脈海拔一千至二千公尺的山區，分佈廣及花蓮縣卓溪鄉、高雄縣那瑪夏鄉、台東縣海端鄉，而以南投縣境為主。人口約有57,630人(106年4月數據)。布農族的氏族又可分為卓社群、卡社群、丹社群、巒社群、郡社群及蘭社群等6個主要氏族，社會組織以父系大家族為主")
+                $("img#pic1").attr("src", "images/Bunun.jpg");
+                show1();
+            });
+            $("a#c").click(function () {
+                slideup1();
+                $("h2#title1").text(arr1[6]);
+                $("p#data1").text("分佈於中央山脈海拔一千至二千公尺的山區，分佈廣及花蓮縣卓溪鄉、高雄縣那瑪夏鄉、台東縣海端鄉，而以南投縣境為主。人口約有57,630人(106年4月數據)。布農族的氏族又可分為卓社群、卡社群、丹社群、巒社群、郡社群及蘭社群等6個主要氏族，社會組織以父系大家族為主")
+                $("img#pic1").attr("src", "images/Bunun.jpg");
+                show1();
+            });
+            $("a#d").click(function () {
+                slideup1();
+                $("h2#title1").text(arr1[7]);
+                $("p#data1").text("分佈區域於北起大武山、南達恆春、西到枋寮、東到台東太麻里的中央山脈兩側。人數將近99,298人(106年4月數據)。")
+                $("img#pic1").attr("src", "images/Paiwan.jpg");
+                show1();
+            });
+
+            $("a#e").click(function () {
+                slideup1();
+                $("h2#title1").text(arr1[8]);
+                $("p#data1").text("分佈區域於北起大武山、南達恆春、西到枋寮、東到台東太麻里的中央山脈兩側。人數將近99,298人(106年4月數據)。")
+                $("img#pic1").attr("src", "images/Paiwan.jpg");
+                show1();
+            });
+            $("a#f").click(function () {
+                slideup1();
+                $("h2#title1").text(arr1[9]);
+                $("p#data1").text("分佈區域於北起大武山、南達恆春、西到枋寮、東到台東太麻里的中央山脈兩側。人數將近99,298人(106年4月數據)。")
+                $("img#pic1").attr("src", "images/Paiwan.jpg");
+                show1();
+            });
+
+            $("a#g").click(function () {
+
+                slideup1();
+                $("h2#title1").text(arr1[10]);
+                $("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+                $("img#pic1").attr("src", "images/Amis.jpg");
+                show1();
+            });
+
+            $("a#h").click(function () {
+
+                slideup1();
+                $("h2#title1").text(arr1[11]);
+                $("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+                $("img#pic1").attr("src", "images/Amis.jpg");
+                show1();
+            });
+
+            $("a#i").click(function () {
+
+                slideup1();
+                $("h2#title1").text(arr1[12]);
+                $("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+                $("img#pic1").attr("src", "images/Amis.jpg");
+                show1();
+            });
+
+
+            $("a#j").click(function () {
+
+                slideup1();
+                $("h2#title1").text(arr1[13]);
+                $("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+                $("img#pic1").attr("src", "images/Amis.jpg");
+                show1();
+            });
+
+            $("a#k").click(function () {
+
+                slideup1();
+                $("h2#title1").text(arr1[14]);
+                $("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+                $("img#pic1").attr("src", "images/Amis.jpg");
+                show1();
+            });
+            $("a#l").click(function () {
+
+                slideup1();
+                $("h2#title1").text(arr1[15]);
+                $("p#data1").text("分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，目前人口約有206,813人(106年4月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主。")
+                $("img#pic1").attr("src", "images/Amis.jpg");
+                show1();
+            });
+        </script>
+    </body>
+</html>
