@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="MenuStyle.css" rel="stylesheet" type="text/css"/>
     <style>
         html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         .w3-sidebar {
@@ -14,6 +15,10 @@
             top: 100px;
             bottom: 0;
             height: auto;
+        }
+        
+        #MenuBar1 a{
+            font-size: 25px;
         }
     </style>
     <body>
@@ -44,14 +49,15 @@
         <div class="w3-main" style="margin-left:250px;margin-top:100px;">
 
             <div class="w3-row w3-padding-64">
-                <div class="w3-twothird w3-container">
+                <div>
                     <h1 class="w3-text-teal">網站介紹</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+                    <ul id="MenuBar1" style="float: left;">
+                        <li><a id="1" href="#" onclick="F1()">網站由來</a></li>
+                        <li><a id="2" href="#">服務宗旨</a></li>
+                        <li><a id="3" href="#">服務對象</a></li>
+                        <li><a id="4" href="#">目的</a></li>
+                    </ul>
+                    <div id="context"></div>
                 </div>
             </div>
 
@@ -87,6 +93,11 @@
             function w3_close() {
                 mySidebar.style.display = "none";
                 overlayBg.style.display = "none";
+            }
+            
+            function F1()
+            {
+                document.getElementById("context").innerHTML = "Hello World";
             }
         </script>
 

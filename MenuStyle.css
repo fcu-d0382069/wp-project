@@ -7,7 +7,7 @@
 
 #MenuBar1 {
     width: auto;
-	height: 100%;
+    height: auto;
     margin: 60px auto;
     border: 1px solid #222;
     background-color: #111;
@@ -32,9 +32,8 @@
 
 #MenuBar1 li {
     float: left;
-    border-right: 1px solid #222;
-    box-shadow: 1px 0 0 #444;
     position: relative;
+    width: 250px;
 }
 
 #MenuBar1 a {
