@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<style>
+#map {
+height: 100%;
+}
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+var map;
+function initMap() {
+map = new google.maps.Map(document.getElementById('map'), {
+zoom: 8,
+center: new google.maps.LatLng(23.904102, 121.079366),
+mapTypeId: 'roadmap'
+});
+
+
+var icons = {
+amei: {
+icon: 'images/mei.png'
+}
+};
+var features = [
+{
+position: new google.maps.LatLng(22.707180,120.652369),
+type: 'amei',
+infowindow: new google.maps.InfoWindow({
+content:
+'<h1 style="color:red;font-size:100%" align="center">台灣原住民族文化園區</h1>'+'地址:屏東縣瑪家鄉北葉村風景104號' 
+})
+}, {
+position: new google.maps.LatLng(23.018046,121.324928),
+type: 'amei',
+infowindow: new google.maps.InfoWindow({
+content:
+'<img src="images/amei.png" width="200px" height="200px">'+'<h1 style="color:red;font-size:100%" >阿美族民俗中心</h1>'+'地址:台東縣成功鎮新村路25號' 
+})
+}, {
+position: new google.maps.LatLng(24.468054,120.945132),
+type: 'amei',
+infowindow: new google.maps.InfoWindow({
+content:
+'<h1 style="color:red;font-size:100%" align="center">泰雅原住民文化產業園區</h1>'+'地址:苗栗縣泰安鄉錦水村圓墩46-3號' 
+})
+}, {
+position: new google.maps.LatLng(23.946896,121.605508),
+type: 'amei',
+infowindow: new google.maps.InfoWindow({
+content:
+'<h1 style="color:red;font-size:100%" align="center">花蓮阿美文化村</h1>'+'地址:仁安村海濱93之1號, 吉安乡花莲市973' 
+})
+}, {
+position: new google.maps.LatLng(24.318957,121.294602),
+type: 'amei',
+infowindow: new google.maps.InfoWindow({
+content:
+'<h1 style="color:red;font-size:100%" align="center">環山部落</h1>'+'地址:台中市和平區台中市和平區' <!-- 泰雅族 -->
+})
+},{
+position: new google.maps.LatLng(24.174307,120.975580),
+type: 'amei',
+infowindow: new google.maps.InfoWindow({
+content:
+'<h1 style="color:red;font-size:100%" align="center">松鶴部落</h1>'+'地址:台中市和平區台中市和平區' <!-- 泰雅族 -->
+})
+}, {
+position: new google.maps.LatLng(22.075878,121.534149),
+type: 'amei',
+infowindow: new google.maps.InfoWindow({
+content:
+'<h1 style="color:red;font-size:100%" align="center">朗島村雅美族穴居屋 Cave Dwelling House</h1>'+'地址:台東縣蘭嶼鄉朗島村' 
+})
+}
+];
+features.forEach(function(feature) {
+var marker = new google.maps.Marker({
+position: feature.position,
+icon: icons[feature.type].icon,
+map: map
+});
+marker.addListener('mouseover', function() {
+feature.infowindow.open(map, marker);
+});
+});
+}
+
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUtrfHzLkQocWLTyZsKtbbBECzUSoG-iA&callback=initMap">
+</script>
+</body>
+</html>
