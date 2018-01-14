@@ -51,7 +51,7 @@ position: new google.maps.LatLng(24.468054,120.945132),
 type: 'amei',
 infowindow: new google.maps.InfoWindow({
 content:
-'<h1 style="color:red;font-size:100%" align="center">泰雅原住民文化產業園區</h1>'+'地址:苗栗縣泰安鄉錦水村圓墩46-3號' 
+'<img src="images/taiyaz.png" width="200px" height="200px">'+'<h1 style="color:red;font-size:100%">泰雅原住民文化產業園區</h1>'+'地址:苗栗縣泰安鄉錦水村圓墩46-3號' 
 })
 }, {
 position: new google.maps.LatLng(23.946896,121.605508),
@@ -65,21 +65,21 @@ position: new google.maps.LatLng(24.318957,121.294602),
 type: 'amei',
 infowindow: new google.maps.InfoWindow({
 content:
-'<h1 style="color:red;font-size:100%" align="center">環山部落</h1>'+'地址:台中市和平區台中市和平區' <!-- 泰雅族 -->
+'<img src="images/taiyaz.png" width="200px" height="200px">'+'<h1 style="color:red;font-size:100%" align="center">環山部落</h1>'+'地址:台中市和平區台中市和平區' <!-- 泰雅族 -->
 })
 },{
 position: new google.maps.LatLng(24.174307,120.975580),
 type: 'amei',
 infowindow: new google.maps.InfoWindow({
 content:
-'<h1 style="color:red;font-size:100%" align="center">松鶴部落</h1>'+'地址:台中市和平區台中市和平區' <!-- 泰雅族 -->
+'<img src="images/taiyaz.png" width="200px" height="200px">'+'<h1 style="color:red;font-size:100%" align="center">松鶴部落</h1>'+'地址:台中市和平區台中市和平區' <!-- 泰雅族 -->
 })
 }, {
 position: new google.maps.LatLng(22.075878,121.534149),
 type: 'amei',
 infowindow: new google.maps.InfoWindow({
 content:
-'<h1 style="color:red;font-size:100%" align="center">朗島村雅美族穴居屋 Cave Dwelling House</h1>'+'地址:台東縣蘭嶼鄉朗島村' 
+'<img src="images/yamei.gif" width="200px" height="200px">'+'<h1 style="color:red;font-size:100%" align="center">朗島村雅美族穴居屋 Cave Dwelling House</h1>'+'地址:台東縣蘭嶼鄉朗島村' 
 })
 }
 ];
@@ -89,7 +89,7 @@ position: feature.position,
 icon: icons[feature.type].icon,
 map: map
 });
-marker.addListener('mouseover', function() {
+marker.addListener('click', function() {
 feature.infowindow.open(map, marker);
 });
 });
