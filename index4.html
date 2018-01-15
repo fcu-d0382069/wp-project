@@ -37,7 +37,7 @@
             <a class="w3-bar-item w3-button w3-hover-black" href="index5.html">部落居住地</a>
             <a class="w3-bar-item w3-button w3-hover-black" href="index6.html">建築特色</a>
             <a class="w3-bar-item w3-button w3-hover-black" href="index7.html">節日活動</a>
-			<a class="w3-bar-item w3-button w3-hover-black" href="map.html">部落景點</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="map.html">部落景點</a>
             <a class="w3-bar-item w3-button w3-hover-black" href="index4.html">聯絡我們</a>
         </nav>
 
@@ -62,8 +62,8 @@
                             <p>內容：<p><textarea name="textarea1" id="textarea1" cols="45" rows="5"></textarea>
                             <p>姓名：<input name="name" type="text" id="name" size="16" maxlength="50" />
                             <p>E-mail：<input name="eMail" type="text" id="eMail" size="30" maxlength="50" />
-                            <p><input type="submit" name="button" id="button" value="送出" />
-                                <input type="reset" name="reset" id="reset" value="重設" />
+                            <p><input type="submit" name="button" id="button" value="送出" onclick="Reload()" />
+                                <input type="reset" name="reset" id="reset" value="重設" onclick="Reload()" />
                                 </div>
                                 </div>
 
@@ -99,6 +99,11 @@
                     function w3_close() {
                         mySidebar.style.display = "none";
                         overlayBg.style.display = "none";
+                    }
+
+                    function Reload()
+                    {
+                        location.reload();
                     }
                 </script>
 
