@@ -1,0 +1,130 @@
+﻿<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html, body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 100px;
+        bottom: 0;
+        height: auto;
+    }
+</style>
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large" style="height:100px; line-height:100px">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <center style="font-size:30px;">台灣原住民族</center>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="index.html"><b>主頁</b></a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="index2.html">網站介紹</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="index3.html">部落介紹</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="index5.html">部落居住地</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="map.html">部落景點</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="index4.html">聯絡我們</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px;margin-top:100px;">
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">部落居住地</h1>
+                <p>
+                    <br>阿美族：阿美族分佈在中央山脈東側，立霧溪以南，太平洋沿岸的東台縱谷及東海岸平原，大部份居住於平地，只有極少數居於山谷中。</br>
+
+                    <br>泰雅族：泰雅族分布在台灣中北部山區，包括埔里至花蓮連線以北地區。</br>
+
+                    <br>排灣族：排灣族以台灣南部為活動區域，北起大武山地，南達恆春，西自隘寮，東到太麻里以南海岸。</br>
+
+                    <br>布農族：布農族分布於中央山脈海拔一千至二千公尺的山區，廣及於高雄縣那瑪夏鄉、台東縣海端鄉，而以南投縣境為主。</br>
+
+                    <br>卑南族：卑南族分布於台東縱谷南部。</br>
+
+                    <br>魯凱族：魯凱族分布於高雄縣茂林鄉、屏東縣霧台鄉及台東縣東興村等地。</br>
+
+                    <br>鄒族：鄒族主要居住於嘉義縣阿里山鄉，亦分布於南投縣信義鄉。</br>
+
+                    <br>賽夏族：賽夏族居住於新竹縣與苗栗縣交界的山區，又分為南、北兩大族群。北賽夏居住於新竹縣五峰鄉，南賽夏居住於苗栗縣南庄鄉與獅潭鄉。</br>
+
+                    <br>雅美族：雅美族分布於台東的蘭嶼島上的六個村落，為台灣唯一的一支海洋民族。</br>
+
+                    <br>邵族：邵族分布於南投縣魚池鄉及水里鄉，大部份邵族人居住日月潭畔的日月村，少部分原來屬頭社系統的邵人，則住在水里鄉頂崁村的大平林。</br>
+
+                    <br>噶瑪蘭族：噶瑪蘭族，過去居住於宜蘭，目前遷居到花蓮和台東。</br>
+
+                    <br>太魯閣族：太魯閣族大致分佈北起於花蓮縣和平溪，南迄紅葉及太平溪這一廣大的山麓地帶，即現行行政體制下的花蓮縣秀林鄉、萬榮鄉及少部份的卓溪鄉立山、崙山等地。</br>
+
+                    <br>撒奇萊雅族：撒奇萊雅族的聚落主要分佈於台灣東部，大致在今日的花蓮縣境內</br>
+
+                    <br>賽德克族：賽德克族的發源地為德鹿灣(Truwan)，為現今仁愛鄉春陽溫泉一帶，主要以台灣中部及東部地域為其活動範圍，約介於北方的泰雅族及南方的布農族之間。</br>
+
+                    <br>拉阿魯哇族：高雄市桃源區高中里、桃源里以及那瑪夏區瑪雅里。</br>
+
+                    <br>卡那卡那富族：高雄市那瑪夏區楠梓仙溪流域兩側，現大部分居住於達卡努瓦里及瑪雅里。</br>
+                </p>
+                
+            </div>
+            <div class="w3-third w3-container">
+                <img id=map" src="images/map.jpg" alt="map" height="800px" width="350px" />
+            </div>
+        </div>
+
+
+        <footer id="myFooter">
+            <div class="w3-container w3-theme-l2 w3-padding-32">
+                <h4 align="center">© Feng Chia University | Design: 我覺得ok小組</h4>
+            </div>
+        </footer>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidebar.style.display = 'block';
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+            }
+    </script>
+
+</body>
+</html>
