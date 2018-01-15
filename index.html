@@ -6,6 +6,39 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+            td.highlight > a {
+                background: #E50104!important;
+                color: #fff!important;
+            }
+        </style>
+        <script>
+            $(function () {
+                var dates = ['01/01/2018', '01/02/2018', '01/03/2018'];
+
+                $("#datepicker").datepicker({
+                    beforeShowDay: highlightDays,
+                    onSelect: function (dateText, inst) {
+                        if(dateText == '01/01/2018'){$("#text").text(dateText);}
+                        else if(dateText == '01/02/2018'){$("#text").text(dateText);}
+                        else if(dateText == '01/03/2018'){$("#text").text(dateText);}
+                    }
+                });
+                function highlightDays(date) {
+                    for (var i = 0; i < dates.length; i++) {
+                        if (new Date(dates[i]).toString() == date.toString()) {
+                            return [true, 'highlight'];
+                        }
+                    }
+                    return [true, ''];
+                }
+                
+            });
+        </script>
     <style>
         html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         .w3-sidebar {
@@ -58,8 +91,8 @@
 幾世紀以來，臺灣原住民被迫接受學習漢人和統治者的語言，加上族群的遷徙與現代生活的影響，導致很大幅度的文化、語言和族群認同的消失。舉例來說，在大約26種已知的臺灣原住民族語言（統稱為臺灣南島語言）中，至少有10種語言已經消亡，5種瀕臨消亡，其他多種語言則出現輕微程度的損害。自從語言學家認為臺灣是南島民族的發源地以來，這些語言已經有著重大的歷史意義。</p>
                 </div>
                 <div class="w3-third w3-container">
-                    <img class="w3-border w3-padding-large w3-padding-32 w3-center" src="https://pic.pimg.tw/facvnine/1476430577-1191020923.png"></img>
-                    <img class="w3-border w3-padding-large w3-padding-64 w3-center" src="http://farm3.staticflickr.com/2699/4179116346_75a6948f34_o.jpg"></img>
+                    <div id="datepicker"></div>
+                    text<div id="text"></div>
                 </div>
             </div>
 
