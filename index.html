@@ -17,17 +17,13 @@
     </style>
     <script>
         $(function () {
-            var dates = ['01/01/2018', '01/02/2018', '01/03/2018'];
+            var dates = ['01/01/2018'];
 
             $("#datepicker").datepicker({
                 beforeShowDay: highlightDays,
                 onSelect: function (dateText, inst) {
                     if (dateText == '01/01/2018') {
-                        $("#text").text(dateText);
-                    } else if (dateText == '01/02/2018') {
-                        $("#text").text(dateText);
-                    } else if (dateText == '01/03/2018') {
-                        $("#text").text(dateText);
+                        $("#text").html("巴布麓部落除喪祭".link("#") + "<p>" + "建和部落除喪祭".link("#") + "<p>" + "下賓朗部落年祭".link("#") + "<p>" + "初鹿部落年祭".link("#"));
                     }
                 }
             });
