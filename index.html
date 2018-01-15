@@ -17,13 +17,31 @@
     </style>
     <script>
         $(function () {
-            var dates = ['01/01/2018'];
+            var dates = ['01/01/2018','01/02/2018','01/03/2018'];
 
             $("#datepicker").datepicker({
                 beforeShowDay: highlightDays,
                 onSelect: function (dateText, inst) {
                     if (dateText == '01/01/2018') {
-                        $("#text").html("巴布麓部落除喪祭".link("#") + "<p>" + "建和部落除喪祭".link("#") + "<p>" + "下賓朗部落年祭".link("#") + "<p>" + "初鹿部落年祭".link("#"));
+                        $("#text").html("巴布麓部落除喪祭".link("#") + 
+                                "<br>" + "建和部落除喪祭".link("#") + 
+                                "<br>" + "下賓朗部落年祭".link("#") + 
+                                "<br>" + "初鹿部落年祭".link("#") +
+                                "<br>" + "初鹿部落除喪祭".link("#") +
+                                "<br>" + "利嘉部落年祭".link("#") +
+                                "<br>" + "加蚋埔夜祭".link("#") +
+                                "<br>" + "南王部落除喪祭".link("#") +
+                                "<br>" + "噶哈巫族年祭".link("#") +
+                                "<br>" + "建和部落年祭".link("#") +
+                                "<br>" + "泰安部落年祭".link("#") +
+                                "<br>" + "賽德克族群傳統文化祭儀".link("#")
+                                );
+                    }
+                    else if (dateText == '01/02/2018') {
+                        $("#text").html("巴布麓部落除喪祭".link("#"));
+                    }
+                    else if (dateText == '01/03/2018') {
+                        $("#text").html("巴布麓部落除喪祭".link("#"));
                     }
                 }
             });
