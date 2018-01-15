@@ -6,39 +6,42 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="/resources/demos/style.css">
-        <script src="JQ/jquery-1.12.4.js" type="text/javascript"></script>
-        <script src="JQ/jquery-ui.js" type="text/javascript"></script>
+    <link href="jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="JQ/jquery-1.12.4.js" type="text/javascript"></script>
+    <script src="JQ/jquery-ui.js" type="text/javascript"></script>
     <style>
-            td.highlight > a {
-                background: #E50104!important;
-                color: #fff!important;
-            }
-        </style>
-        <script>
-            $(function () {
-                var dates = ['01/01/2018', '01/02/2018', '01/03/2018'];
+        td.highlight > a {
+            background: #E50104!important;
+            color: #fff!important;
+        }
+    </style>
+    <script>
+        $(function () {
+            var dates = ['01/01/2018', '01/02/2018', '01/03/2018'];
 
-                $("#datepicker").datepicker({
-                    beforeShowDay: highlightDays,
-                    onSelect: function (dateText, inst) {
-                        if(dateText == '01/01/2018'){$("#text").text(dateText);}
-                        else if(dateText == '01/02/2018'){$("#text").text(dateText);}
-                        else if(dateText == '01/03/2018'){$("#text").text(dateText);}
+            $("#datepicker").datepicker({
+                beforeShowDay: highlightDays,
+                onSelect: function (dateText, inst) {
+                    if (dateText == '01/01/2018') {
+                        $("#text").text(dateText);
+                    } else if (dateText == '01/02/2018') {
+                        $("#text").text(dateText);
+                    } else if (dateText == '01/03/2018') {
+                        $("#text").text(dateText);
                     }
-                });
-                function highlightDays(date) {
-                    for (var i = 0; i < dates.length; i++) {
-                        if (new Date(dates[i]).toString() == date.toString()) {
-                            return [true, 'highlight'];
-                        }
-                    }
-                    return [true, ''];
                 }
-                
             });
-        </script>
+            function highlightDays(date) {
+                for (var i = 0; i < dates.length; i++) {
+                    if (new Date(dates[i]).toString() == date.toString()) {
+                        return [true, 'highlight'];
+                    }
+                }
+                return [true, ''];
+            }
+
+        });
+    </script>
     <style>
         html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         .w3-sidebar {
@@ -70,7 +73,7 @@
             <a class="w3-bar-item w3-button w3-hover-black" href="index5.html">部落居住地</a>
             <a class="w3-bar-item w3-button w3-hover-black" href="index6.html">建築特色</a>
             <a class="w3-bar-item w3-button w3-hover-black" href="index7.html">節日活動</a>
-			<a class="w3-bar-item w3-button w3-hover-black" href="map.html">部落景點</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="map.html">部落景點</a>
             <a class="w3-bar-item w3-button w3-hover-black" href="index4.html">聯絡我們</a>
         </nav>
 
@@ -84,11 +87,11 @@
                 <div class="w3-twothird w3-container">
                     <h1 class="w3-text-teal">網站簡介</h1>
                     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp臺灣原住民族是指原居於臺灣的民族，由17世紀漢人移民進入前分布在臺灣各地的數個語言及生活方式不同之部族構成，屬於南島民族；其中臺灣本島的所有部族為臺灣南島語群，蘭嶼上的達悟族則屬於馬來-玻里尼西亞語族的巴丹語群。由於西方早期以「福爾摩沙」一詞稱呼臺灣，在部份文獻中又被稱為「福爾摩沙人」，意即「福爾摩沙島上的居民」。目前僅16個部族為官方所承認，根據《原住民族身分法》登記之戶口統計約55萬多人口，佔臺灣人口的2.37%。
-臺灣原住民族曾是臺灣的主體民族，但受外來移民數量的擴張以致居住範圍受到排擠，傳統領域逐漸縮小；這些區域現今主要位於臺灣本島東部、西部山區以及蘭嶼，並由官方劃定為原住民族地區，簡稱原鄉，原住民族則享有自治權。此外，原住民族長期以來因都市化而流入各大都會區，現今已有四成六人口設籍於都會區，部分區域之族人甚至認同其現居地為原鄉而形成部落。</p>
+                        臺灣原住民族曾是臺灣的主體民族，但受外來移民數量的擴張以致居住範圍受到排擠，傳統領域逐漸縮小；這些區域現今主要位於臺灣本島東部、西部山區以及蘭嶼，並由官方劃定為原住民族地區，簡稱原鄉，原住民族則享有自治權。此外，原住民族長期以來因都市化而流入各大都會區，現今已有四成六人口設籍於都會區，部分區域之族人甚至認同其現居地為原鄉而形成部落。</p>
                     <h1 class="w3-text-teal">原住民起源</h1>
                     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp臺灣各原住民族擁有各自的起源傳說，近年來依據語言學、考古學和文化人類學等的研究推斷，在17世紀漢人移民臺灣之前，臺灣原住民族在臺灣的活動已有大約8,000年之久。臺灣原住民族在遺傳學和語言學的分類上屬於南島民族和南島語系，和菲律賓、馬來西亞、印度尼西亞、馬達加斯加和大洋洲等的南島民族族群有密切關聯。中華民國原住民族委員會在介紹臺灣原住民族與世界南島語系民族的關係時即表明「臺灣原住民族屬於南島民族，在人種上屬馬來人種，臺灣是南島民族分布的最北端。」
-凌純聲認為百越族為臺灣原住民族的先祖，也是南島民族的祖先。李壬癸認為，從語言的關係看，古代漢民族、傣民族、南島民族的地理：分布應該是漢民族在北，傣民族居中，南島民族在南。換言之，漢語與傣語有密切的接觸，傣語與南島語也有密切的接觸，但漢語與南島語卻沒有直接接觸的語言證據。李壬癸認為臺灣原住民起源於中南半島一帶的可能性最大。
-幾世紀以來，臺灣原住民被迫接受學習漢人和統治者的語言，加上族群的遷徙與現代生活的影響，導致很大幅度的文化、語言和族群認同的消失。舉例來說，在大約26種已知的臺灣原住民族語言（統稱為臺灣南島語言）中，至少有10種語言已經消亡，5種瀕臨消亡，其他多種語言則出現輕微程度的損害。自從語言學家認為臺灣是南島民族的發源地以來，這些語言已經有著重大的歷史意義。</p>
+                        凌純聲認為百越族為臺灣原住民族的先祖，也是南島民族的祖先。李壬癸認為，從語言的關係看，古代漢民族、傣民族、南島民族的地理：分布應該是漢民族在北，傣民族居中，南島民族在南。換言之，漢語與傣語有密切的接觸，傣語與南島語也有密切的接觸，但漢語與南島語卻沒有直接接觸的語言證據。李壬癸認為臺灣原住民起源於中南半島一帶的可能性最大。
+                        幾世紀以來，臺灣原住民被迫接受學習漢人和統治者的語言，加上族群的遷徙與現代生活的影響，導致很大幅度的文化、語言和族群認同的消失。舉例來說，在大約26種已知的臺灣原住民族語言（統稱為臺灣南島語言）中，至少有10種語言已經消亡，5種瀕臨消亡，其他多種語言則出現輕微程度的損害。自從語言學家認為臺灣是南島民族的發源地以來，這些語言已經有著重大的歷史意義。</p>
                 </div>
                 <div class="w3-third w3-container">
                     <div id="datepicker"></div>
