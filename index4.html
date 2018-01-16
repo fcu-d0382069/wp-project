@@ -61,7 +61,7 @@
                             <p>內容：<p><textarea name="textarea1" id="textarea1" cols="45" rows="5"></textarea>
                             <p>姓名：<input name="name" type="text" id="name" size="16" maxlength="50" />
                             <p>E-mail：<input name="eMail" type="text" id="eMail" size="30" maxlength="50" />
-                            <p><input type="submit" name="button" id="button" value="送出" onclick="Reload()" />
+                            <p><input type="submit" name="button" id="button" value="送出" onclick="Send()" />
                                 <input type="reset" name="reset" id="reset" value="重設" onclick="Reload()" />
                                 </div>
                                 </div>
@@ -102,6 +102,12 @@
 
                     function Reload()
                     {
+                        location.reload();
+                    }
+                    
+                    function Send()
+                    {
+                        alert("發送成功！");
                         location.reload();
                     }
                 </script>
